@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,6 +49,13 @@ table {
 *,*:before,*:after {
     box-sizing: border-box;
 }
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
 img {
     display: block;
 }
@@ -65,32 +71,23 @@ img {
     justify-content: space-between;
     align-items: center;
     margin: 30px 0;
+    color: #3F5D45;
 }
 .header ul {
     display: flex;
     align-items: center;
 }
-
 .header li {
-    margin: 0 20px;
-    text-align: left;
-    font: normal normal 600 16px/73px PingFang TC;
     letter-spacing: 0px;
-    color: #3F5D45;
 }
 .header li a {
-    text-decoration: none;
     color: #3F5D45;
-}
-.header li img {
-    position: absolute;
-    top: 56px;
-    width: 20px;
-    height: 20px;
+    font-weight: bold;
+    padding: 0 30px;
 }
 .header img {
-    width: 211px;
-    height: 40px;    
+    margin-left: 49px;
+    width: 24px;
 }
 /*---內容----*/
 .banner {
@@ -104,13 +101,13 @@ img {
 /*---側邊選單----*/
 .side-bar {
     width: 300px;
+    font-weight: bold;
 }
 .side-bar h2 {
     border: 1px solid #EAF0ED;
     text-align: center;
     padding: 16px 40px;
     color: #3F5D45;
-    font: normal normal 600 24px/40px PingFang TC;
     font-size: 24px;
     color: #EAF0ED;
     background-color: #3F5D45;
@@ -122,15 +119,11 @@ img {
     padding: 16px 40px;  
 }
 .side-bar a {
-    text-decoration: none;
+    font-size: 24px;
     color: #3F5D45;
-    font: normal normal 600 24px/40px PingFang TC;
-    font-size: 24px;;
 }
 .side-bar li:first-child{
     background-color: #EAF0ED;
-    font: normal normal 600 24px/40px PingFang TC;
-    letter-spacing: 0px;
     color: #EAF0ED;
 }
 /*---產品表單----*/
@@ -145,6 +138,7 @@ img {
 }                   
 .item {
     position: relative;
+    margin-bottom: 20px;
 }
 .product-text {
     width: 300px;
@@ -153,30 +147,27 @@ img {
 }
 .product-text h3 {
     padding: 14px 33px;
-    font: normal normal 300 20px/20px PingFang TC;
     letter-spacing: 0px;
     color: #3F5D45;
 }
 .product-text p {
+    font-weight: bold;
     padding: 14px 25px;
     text-align: center;
-    font: normal normal 600 20px/24px PingFang TC;
     letter-spacing: 0px;
     color: #3F5D45;
     border-left: 1px solid #EAF0ED;
 }
 /*---購物車----*/
 .cart {
+    font-weight: bold;
     display: block;
     text-align: center;
-    margin-bottom: 20px;
     font-size: 24px;
     color: #3F5D45;
-    font: normal normal 600 24px/20px PingFang TC;
     background: #EAF0ED 0% 0% no-repeat padding-box;
     border: 1px solid #EAF0ED;
     padding: 16px 0;
-    text-decoration: none;
     letter-spacing: 0px;
 }
 /*---本日精選----*/
@@ -186,11 +177,10 @@ img {
     position: absolute;
     writing-mode: vertical-lr;
     top: 0;
-    left: 0;
+    left: 15px;
     padding: 10px;
     letter-spacing: 0px;
     color: #EAF0ED;
-    margin-left: 15px;
 }
 .heart img {
     width: 20px;
@@ -199,34 +189,25 @@ img {
     top: 19px;
     right:22px;
 }
+/*--分頁--*/
 .page {
     display: flex;
     justify-content: flex-end;
-}
-.page li {
-    font-size: 20px;
-    display: inline-block;
-    text-align: center;
-    font: normal normal 600 20px/20px PingFang TC;
-    padding: 16px 26px;
-    letter-spacing: 0px;
-    color:#3F5D45;
     margin-top: 10px;
-    margin-bottom: 76px;
-    border: 1px solid #EAF0ED;;
+    margin-bottom: 60px;
 }
-
-.page li a {
-    text-decoration: none;
-    color: #3F5D45;
+.page a{
+    display: block;
+    padding: 16px 24px;
+    border: 1px solid #EAF0ED;
 }
-
-.page-active {
+.page-active a{
     background: #3F5D45;
     color: #EAF0ED;
 }
-
-
+.page img {
+    width: 20px;
+}
 /*--訂閱區--*/
 .subscribe {
     background-color: #3F5D45;
@@ -269,11 +250,10 @@ img {
 .material-icons1 {
     width: 24px;
     height: 24px;
-
 }
 /*---頁尾----*/
 .footer {
-    background: #EAF0ED 0% 0% no-repeat padding-box;
+    background : #EAF0ED ; 
 }
 .footer-container{
     padding-bottom: 30px;
@@ -297,9 +277,6 @@ img {
     font: normal normal normal 16px/24px Helvetica Neue;
     letter-spacing: 0px;
     color: #3F5D45;
-}
-.footer li a {
-    text-decoration: none;
 }
 .footer-right p, .footer-right span{
     margin-top: 30px;
